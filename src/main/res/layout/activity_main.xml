@@ -3,6 +3,6 @@
                 android:layout_height="match_parent"
         >
 <Button android:id="@+id/zxing_btn"
-        android:layout_width="wrap_content" android:layout_height="match_parent"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
         android:text="二维码扫描"/>
 </RelativeLayout>
