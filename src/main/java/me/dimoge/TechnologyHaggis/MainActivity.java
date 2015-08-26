@@ -1,11 +1,11 @@
 package me.dimoge.TechnologyHaggis;
 
 
-import android.app.Activity;
 import android.os.Bundle;
+import com.journeyapps.barcodescanner.CaptureActivity;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends CaptureActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
