@@ -10,9 +10,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 /**
- * alpha½¥±ä¶¯»­
- * ÕâÊÇÒ»¸öÏà¶Ô¼òµ¥µÄ¶¯»­(ÓëÆäËûÈı¸ö¶¯»­±È½Ï)
- * ÊôĞÔ¼òµ¥, ¶¯×÷±È½ÏÉÙ
+ * alphaæ¸å˜åŠ¨ç”»
+ * è¿™æ˜¯ä¸€ä¸ªç›¸å¯¹ç®€å•çš„åŠ¨ç”»(ä¸å…¶ä»–ä¸‰ä¸ªåŠ¨ç”»æ¯”è¾ƒ)
+ * å±æ€§ç®€å•, åŠ¨ä½œæ¯”è¾ƒå°‘
  * Created by dime on 2015/9/22 0022.
  */
 public class AlpahActivity extends Activity {
@@ -34,44 +34,44 @@ public class AlpahActivity extends Activity {
                 AlphaAnimation alphaAnimation = new AlphaAnimation(1f, 0f);
 
                 /**
-                 * ¶¯»­Ò»¸öÖÜÆÚµÄÊ±¼ä
+                 * åŠ¨ç”»ä¸€ä¸ªå‘¨æœŸçš„æ—¶é—´
                  */
                 alphaAnimation.setDuration(3000);
 
-                /**¶¯»­Ö´ĞĞºó
-                 * @param true ¶¯»­½áÊøºó,Í£Ö¹ÔÚ¶¯»­µÄ×îºóÒ»¿Ì
-                 * @param false ¶¯»­½áÊøºó,»Øµ½×î³õµÄ×´Ì¬
+                /**åŠ¨ç”»æ‰§è¡Œå
+                 * @param true åŠ¨ç”»ç»“æŸå,åœæ­¢åœ¨åŠ¨ç”»çš„æœ€åä¸€åˆ»
+                 * @param false åŠ¨ç”»ç»“æŸå,å›åˆ°æœ€åˆçš„çŠ¶æ€
                  */
                 alphaAnimation.setFillAfter(true);
 
                 /**
-                 * ÀàËÆfillAfter
+                 * ç±»ä¼¼fillAfter
                  */
                 alphaAnimation.setFillBefore(true);
 
-                /**ÑÓÊ±Ö´ĞĞ
-                 * @param long Ö¸¶¨ÑÓÊ±Ö´ĞĞµÄÊ±¼ä
+                /**å»¶æ—¶æ‰§è¡Œ
+                 * @param long æŒ‡å®šå»¶æ—¶æ‰§è¡Œçš„æ—¶é—´
                  */
-                alphaAnimation.setStartOffset(1000);//ÑÓ³Ù1000ºÁÃëÖ´ĞĞ
+                alphaAnimation.setStartOffset(1000);//å»¶è¿Ÿ1000æ¯«ç§’æ‰§è¡Œ
 
-                /**ÖØ¸´Ä£Ê½
-                 * @param Animation.REVERSE µ¹²¥Ò»´Î
-                 * @param Animation.RESTART ÖØĞÂ¿ªÊ¼
+                /**é‡å¤æ¨¡å¼
+                 * @param Animation.REVERSE å€’æ’­ä¸€æ¬¡
+                 * @param Animation.RESTART é‡æ–°å¼€å§‹
                  */
-                alphaAnimation.setRepeatMode(Animation.REVERSE);//ÖØĞÂ¿ªÊ¼
+                alphaAnimation.setRepeatMode(Animation.REVERSE);//é‡æ–°å¼€å§‹
 
-                /**ÖØ¸´´ÎÊı
-                 * @param Animation.INFINITE ÎŞÏßÑ­»·
-                 * @param -1 ÎŞÏßÑ­»·
-                 * @param 0 Ò»´Î
-                 * @param int Ö¸¶¨´ÎÊı
+                /**é‡å¤æ¬¡æ•°
+                 * @param Animation.INFINITE æ— çº¿å¾ªç¯
+                 * @param -1 æ— çº¿å¾ªç¯
+                 * @param 0 ä¸€æ¬¡
+                 * @param int æŒ‡å®šæ¬¡æ•°
                  */
                 alphaAnimation.setRepeatCount(Animation.INFINITE);
 
-                img.startAnimation(alphaAnimation);//¿ªÊ¼¶¯»­
+                img.startAnimation(alphaAnimation);//å¼€å§‹åŠ¨ç”»
 
                 /**
-                 * ÕâÀï¿ÉÒÔ¶Ô¶¯»­µÄ¿ªÊ¼, ½áÊø, ÖØ¸´ ½øĞĞÊÂ¼ş¼àÌı
+                 * è¿™é‡Œå¯ä»¥å¯¹åŠ¨ç”»çš„å¼€å§‹, ç»“æŸ, é‡å¤ è¿›è¡Œäº‹ä»¶ç›‘å¬
                  */
                 alphaAnimation.setAnimationListener(new Animation.AnimationListener() {
                     @Override
@@ -91,8 +91,8 @@ public class AlpahActivity extends Activity {
     }
 
     /**
-     * Í¨¹ıxmlÅäÖÃµÄ·½Ê½ÅäÖÃalpha¶¯»­
-     * xmlÅäÖÃÍ¬Ñù¿ÉÒÔÉèÖÃ¸÷ÖÖÊôĞÔ, ²¢Ã»ÓĞ²»Í¬
+     * é€šè¿‡xmlé…ç½®çš„æ–¹å¼é…ç½®alphaåŠ¨ç”»
+     * xmlé…ç½®åŒæ ·å¯ä»¥è®¾ç½®å„ç§å±æ€§, å¹¶æ²¡æœ‰ä¸åŒ
      */
     private void XML_ALPHA() {
         Animation alphaAnimation = AnimationUtils.loadAnimation(AlpahActivity.this, R.anim.animation_alpha);
