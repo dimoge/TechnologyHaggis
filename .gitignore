@@ -1,0 +1,5 @@
+# 忽略文件 -- 全局
+/.gradle
+/.idea
+/build
+/*.iml
