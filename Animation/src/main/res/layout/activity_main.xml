@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<Button
+		android:id="@+id/translate_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="translate移动动画"/>
+
+	<Button
+		android:id="@+id/rotate_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="rotate旋转动画"/>
+
+	<Button
+		android:id="@+id/scale_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="scale伸缩动画"/>
+
+	<Button
+		android:id="@+id/alpha_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="alpha渐变动画"/>
+</LinearLayout>
