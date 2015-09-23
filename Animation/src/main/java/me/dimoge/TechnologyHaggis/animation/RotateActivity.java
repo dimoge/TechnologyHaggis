@@ -1,5 +1,6 @@
 package me.dimoge.TechnologyHaggis.animation;
 
+import android.animation.TimeInterpolator;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -46,14 +47,25 @@ public class RotateActivity extends Activity {
 
                 /**设置速度
                  * @param Interpolator 动画速率变化的控制
-                 * 五种速率控制, 说明如下
+                 * 九种速率控制, 说明如下
                  */
                 LinearInterpolator li = new LinearInterpolator();//匀速
                 AccelerateDecelerateInterpolator adli = new AccelerateDecelerateInterpolator();//在动画结束和开始的地方速率改变比较慢, 在中间的时候加速
                 AccelerateInterpolator ali = new AccelerateInterpolator();//在动画开始的地方速率改变比较慢, 然后开始加速
                 CycleInterpolator cli = new CycleInterpolator(10);//动画循环特定的次数, 速率改变沿正玄曲线(需要指定动画循环次数)
                 DecelerateInterpolator dli = new DecelerateInterpolator();//在动画开始的地方速率改变比较慢, 然后开始减速
-                rotateAnimation.setInterpolator(li);
+                AnticipateInterpolator anticipateInterpolator = new AnticipateInterpolator();//反向 ，先向相反方向改变一段再加速播放
+                AnticipateOvershootInterpolator aoi = new AnticipateOvershootInterpolator();// 反向加回弹，先向相反方向改变，再加速播放，会超出目的值然后缓慢移动至目的值
+                BounceInterpolator bi = new BounceInterpolator();//跳跃，快到目的值时值会跳跃，如目的值100，后面的值可能依次为85，77，70，80，90，100
+                OvershootInterpolator osi = new OvershootInterpolator();//回弹，最后超出目的值然后缓慢改变到目的值
+                TimeInterpolator timeInterpolator = new TimeInterpolator() {
+                    @Override
+                    public float getInterpolation(float input) {
+                        return 0;
+                    }
+                };//一个接口，允许你自定义interpolator，以上几个都是实现了这个接口
+
+                rotateAnimation.setInterpolator(aoi);
 
                 img.startAnimation(rotateAnimation);
             }
