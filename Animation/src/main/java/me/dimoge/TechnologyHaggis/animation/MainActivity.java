@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    Button translateBtn, scaleBtn, rotateBtn, alphaBtn;
+    Button translateBtn, scaleBtn, rotateBtn, alphaBtn, setBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +20,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
         scaleBtn = (Button) findViewById(R.id.scale_btn);
         rotateBtn = (Button) findViewById(R.id.rotate_btn);
         alphaBtn = (Button) findViewById(R.id.alpha_btn);
+        setBtn = (Button) findViewById(R.id.set_btn);
 
         translateBtn.setOnClickListener(this);
         scaleBtn.setOnClickListener(this);
         rotateBtn.setOnClickListener(this);
         alphaBtn.setOnClickListener(this);
+        setBtn.setOnClickListener(this);
     }
 
 
@@ -42,6 +44,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.alpha_btn:
                 startActivity(new Intent(MainActivity.this, AlpahActivity.class));
+                break;
+            case R.id.set_btn:
+                startActivity(new Intent(MainActivity.this, SetActivity.class));
                 break;
             default:
                 return;
