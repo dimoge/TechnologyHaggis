@@ -59,4 +59,13 @@ public class RotateActivity extends Activity {
             }
         });
     }
+
+    /**
+     *  通过xml配置的方式, 实现rotate旋转动画
+     *  不同的是, 通过xml配置速度的话, 要在set中写, 而不是在<rotate ./> 中, 否则不会起作用!!!!
+     */
+    private void XML_ROTATE(){
+        Animation rotateAnimation = AnimationUtils.loadAnimation(RotateActivity.this, R.anim.animation_rotate);
+        img.startAnimation(rotateAnimation);
+    }
 }
