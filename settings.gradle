@@ -1,1 +1,1 @@
-include ':GuoDaBao', ':Animation'
+include ':GuoDaBao', ':Animation', 'HTTP'
