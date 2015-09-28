@@ -32,10 +32,10 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 HttpUtils http = new HttpUtils();
                 RequestParams params = new RequestParams();
-                params.addBodyParameter("displayId", "0000-11111-2222-3333");
+                params.addBodyParameter("displayId", "1111-2222-3333");
 
                 http.send(HttpRequest.HttpMethod.POST,   //@param 请求类型:POST
-                        "http://sbuu.danwi.me/app_api/display/getInfo.do",    //@param 请求地址 http://www.baidu.com.....
+                        "http://192.168.126.19:3000/app_api/display/getInfo.do",    //@param 请求地址 http://www.baidu.com.....
                         params, //@param post请求参数
                         new RequestCallBack<Object>() {     //@param 请求回调
                             @Override
