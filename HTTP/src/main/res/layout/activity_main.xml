@@ -1,7 +1,8 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:orientation="vertical"
                 tools:context=".MainActivity">
 
 
@@ -12,10 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-</RelativeLayout>
+</LinearLayout>
