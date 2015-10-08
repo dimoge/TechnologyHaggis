@@ -1,1 +1,1 @@
-include ':GuoDaBao', ':Animation', ':HTTP'
+include ':GuoDaBao', ':Animation', ':HTTP', ':CameraSys'
