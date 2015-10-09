@@ -3,8 +3,8 @@
                 android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/btn"
-        android:text="跳转到second"
+        android:id="@+id/btn2"
+        android:text="发送事件firstEvent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
