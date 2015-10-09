@@ -39,3 +39,12 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
+
+
+task hello<<{
+    println "hello world"
+}
+
+task intro(dependsOn: hello)<<{
+    println "dependsOn example"
+}
