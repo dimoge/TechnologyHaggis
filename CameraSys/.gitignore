@@ -1,4 +1,4 @@
 # 忽略文件 -- model
 /build
 /*.iml
-
+/proguard-rules.pro
