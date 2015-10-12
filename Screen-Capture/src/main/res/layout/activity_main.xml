@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+                android:id="@+id/main_layout"
+              android:background="@mipmap/one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <Button android:id="@+id/btn_start"
+            android:text="开始录制"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btn_end"
+            android:text="结束录制"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+	<ImageView android:id="@+id/play_iv"
+               android:scaleType="matrix"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+</LinearLayout>
