@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffff" >
+	<Button android:id="@+id/btn_start"
+		android:text="显示小球"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/btn_end"
+            android:text="干掉小球"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

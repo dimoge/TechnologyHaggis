@@ -1,1 +1,1 @@
-include ':GuoDaBao', ':Animation', ':HTTP', ':CameraSys', ':EventBus', ':Screen-Color', ':Screen-Capture', ':Screen-Capture-other'
+include ':GuoDaBao', ':Animation', ':HTTP', ':CameraSys', ':EventBus', ':Screen-Color', ':Screen-Capture', ':Screen-Capture-other', ':window-ball'
