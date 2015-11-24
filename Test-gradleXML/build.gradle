@@ -14,7 +14,7 @@ repositories {
 
 android {
     compileSdkVersion 16
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "19.1.0"
 
     defaultConfig {
         applicationId "com.example.test_gradlexml.app"
@@ -32,8 +32,34 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //显示日志
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField('String', 'SERVER_URL', '"http://sbuu.danwi.me/"')
+        }
+//        applicationVariants.all { variant ->
+//            variant.outputs.each { output ->
+//                def apk = output.outputFile;
+//                def newName = "4u-sbuu" + variant.baseName.replace("-release", "") + "-" + defaultConfig.versionName + ".apk";
+//                output.outputFile = new File(apk.parentFile, newName);
+//            }
+//        }
+    }
+
+
+    productFlavors{
+        youmen{
+            applicationId "com.dimoge.um-green"
+            minSdkVersion 14
+            versionCode 10
+        }
+
+        shop360 {
+            applicationId "com.dimoge.360shop"
+            minSdkVersion 14
+            versionCode 11
         }
     }
+
 }
 
 dependencies {
