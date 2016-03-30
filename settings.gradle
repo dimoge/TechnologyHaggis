@@ -1,1 +1,1 @@
-include ':GuoDaBao', ':Animation', ':HTTP', ':CameraSys', ':EventBus', ':Screen-Color', ':Screen-Capture', ':Screen-Capture-other', ':window-ball', ':ExplosionField-Study', ':ValueAnimation-Study', ':ViewPager-Study', ':NetWork', ':Test-gradleXML', ':buildTypeTest'
+include ':GuoDaBao', ':Animation', ':HTTP', ':CameraSys', ':Screen-Capture', ':ExplosionField-Study', ':ViewPager-Study', ':NetWork', ':Test-gradleXML', ':buildTypeTest'
